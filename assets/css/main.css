@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f3f6fa;
+		background: #eff0f3;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -318,6 +318,8 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
+			display: flex;
+    		justify-content: center;
 			width: 33.33333%;
 		}
 
@@ -1883,8 +1885,12 @@ input, select, textarea {
 /* Icon */
 
 	.icon {
+		display: flex;
+    	justify-content: center; /* Center items horizontally */
+		align-items: center;
 		text-decoration: none;
 		position: relative;
+		
 	}
 
 		.icon:before {
@@ -1920,7 +1926,7 @@ input, select, textarea {
 			border: 0;
 			border-radius: 100%;
 			display: inline-block;
-			font-size: 1.25em;
+			font-size: 3em;
 			height: 2.25em;
 			left: 0;
 			line-height: 2.25em;
@@ -1962,7 +1968,8 @@ input, select, textarea {
 				}
 
 			.icon.circle.fa-github {
-				background: #dcad8b;
+				font-family: 'Font Awesome 5 Brands';
+				background: #a9c16e;
 				color: #fff;
 			}
 
@@ -1970,14 +1977,43 @@ input, select, textarea {
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-dribbble {
-				background: #da83ae;
+			.icon.circle.fa-blogger {
+				background: #ca8548;
 				color: #fff;
 			}
 
-				.icon.circle.fa-dribbble:hover {
+				.icon.circle.fa-blogger:hover {
 					background: #df93b8;
 				}
+
+			.icon.circle.fa-researchgate {
+				background: #504e4f;
+				color: #ffffff;
+			}
+
+				.icon.circle.fa-researchgate:hover {
+					
+					background: #e8e4e4;
+				}
+
+			.icon.circle.fa-envelope {
+				background: #b7aeb2;
+				color: #875656;
+			}
+
+				.icon.circle.fa-envelope:hover {
+					background: #e8e4e4;
+				}
+
+			.icon.circle.fa-linkedin {
+				background: #2b5c90;
+				color: #ffffff;
+			}
+
+				.icon.circle.fa-linkedin:hover {
+					background: #e8e4e4;
+				}
+
 
 		.icon.featured {
 			cursor: default;
@@ -2212,12 +2248,14 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			background-color: #ffffff;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
+			padding:0;
+			margin: 0 auto;
 			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
-			color: #fff;
+			background-size: 15em, 15em;
+			color: #000000;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
